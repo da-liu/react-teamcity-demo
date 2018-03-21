@@ -1,0 +1,24 @@
+{
+  "name": "teamcity-react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jest-teamcity-reporter": "^0.7.0",
+    "raf": "^3.3.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "test-ci": "yarn test --coverage --testResultsProcessor=jest-teamcity-reporter",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.3"
+  }
+}
